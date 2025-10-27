@@ -1,0 +1,33 @@
+.skills-slider {
+  width: 100%;
+  overflow: hidden;
+  padding: 20px 0;
+  background: #0a0a0a;
+}
+
+.slider-row {
+  overflow: hidden;
+  position: relative;
+}
+
+.slider-track {
+  display: flex;
+  gap: 20px;
+  width: max-content;
+}
+
+.slider-track span {
+  background: #111;
+  border: 1px solid #333;
+  padding: 8px 16px;
+  border-radius: 8px;
+  color: #fff;
+  font-family: monospace;
+  font-size: 14px;
+  white-space: nowrap;
+  transition: background 0.3s;
+}
+
+.slider-track span:hover {
+  background: #222;
+}
