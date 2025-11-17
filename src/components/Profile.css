@@ -434,7 +434,7 @@ border-radius: 100%;
 .project-img{
 border-radius: 5px;
 overflow: hidden;
-height: 180px;
+
 }
 .project-img img{
   width: 100%;
@@ -848,9 +848,7 @@ margin-top: 10px;
   width: 92%;
   gap: 80px;
 }
-.project-img{
-  height: 40%;
-}
+
 .Contact-div{
   width: 75%;
   padding: 50px 0px 10px 0px;
@@ -982,9 +980,7 @@ footer{
   width: 92%;
   gap: 80px;
 }
-.project-img{
-  height: 58%;
-}
+
 .Contact-div{
   padding: 80px 80px 10px 100px;
   margin-top: 0px;
@@ -1019,9 +1015,7 @@ footer{
 .projects-div {
   gap: 25px;
 }
-.project-img{
-  height: 140px;
-}
+
 .project-title{
   font-size: 18px;
 }

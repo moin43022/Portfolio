@@ -6,6 +6,7 @@ import dp from "./mydp.jpg"
 import cal from "./calculator.jpeg"
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import SkillsSlider from "./SkillsSlider";
+import ecom from "./e-com.png"
 
 export default function PortfolioPage() {
   const [hover, setHover] = useState(false);
@@ -146,7 +147,7 @@ const [menuOpen, setMenuOpen] = useState(false);
       </ul>
     </motion.nav>
 
-      {/* Hero Section */}
+    
       {/* Hero Section */}
 <section className="hero" id="home" 
 
@@ -320,24 +321,24 @@ I’ve always had a deep passion for creating things from the ground up, whether
         viewport={{ once: true }}
           >
       {/* Project Title */}
-      <div className="project-img">
-    <img src={cal} alt="calculator" />
+         <div className="project-img">
+    <img src={ecom} alt="calculator" />
       </div>
-      <h2 className="project-title">Simple Calculator</h2>
+      <h2 className="project-title">E-Commerce Website</h2>
 
       {/* Description */}
       <p className="project-description">
-        A responsive calculator built using HTML, CSS, and JavaScript.It performs basic arithmetic operations like addition, subtraction, multiplication, and division with a clean and user-friendly interface.
-      </p>
+       A simple and elegant e-commerce platform designed with React and JSON-based product data. It includes features like product display, shopping cart updates, and a demo payment flow, wrapped in a clean and intuitive UI.
+         </p>
 
       
 
       {/* Links */}
       <div className="project-links">
-        <a href="https:" target="_blank" rel="noopener noreferrer" className="btn btn-code">
+        <a href="https://github.com/moin43022/E-com" target="_blank" rel="noopener noreferrer" className="btn btn-code">
           Code
         </a>
-        <a href="https:" target="_blank" rel="noopener noreferrer" className="btn btn-demo">
+        <a href="https://e-com-j9j9.vercel.app/" target="_blank" rel="noopener noreferrer" className="btn btn-demo">
           Demo
         </a>
       </div>
@@ -353,23 +354,23 @@ I’ve always had a deep passion for creating things from the ground up, whether
           >
       {/* Project Title */}
       <div className="project-img">
-    <img src={cal} alt="calculator" />
+    <img src={ecom} alt="calculator" />
       </div>
-      <h2 className="project-title">Simple Calculator</h2>
+      <h2 className="project-title">E-Commerce Website</h2>
 
       {/* Description */}
       <p className="project-description">
-        A responsive calculator built using HTML, CSS, and JavaScript.It performs basic arithmetic operations like addition, subtraction, multiplication, and division with a clean and user-friendly interface.
-      </p>
+       A simple and elegant e-commerce platform designed with React and JSON-based product data. It includes features like product display, shopping cart updates, and a demo payment flow, wrapped in a clean and intuitive UI.
+         </p>
 
       
 
       {/* Links */}
       <div className="project-links">
-        <a href="https:" target="_blank" rel="noopener noreferrer" className="btn btn-code">
+        <a href="https://github.com/moin43022/E-com" target="_blank" rel="noopener noreferrer" className="btn btn-code">
           Code
         </a>
-        <a href="https:" target="_blank" rel="noopener noreferrer" className="btn btn-demo">
+        <a href="https://e-com-j9j9.vercel.app/" target="_blank" rel="noopener noreferrer" className="btn btn-demo">
           Demo
         </a>
       </div>
@@ -385,23 +386,23 @@ I’ve always had a deep passion for creating things from the ground up, whether
           >
       {/* Project Title */}
       <div className="project-img">
-    <img src={cal} alt="calculator" />
+    <img src={ecom} alt="calculator" />
       </div>
-      <h2 className="project-title">Simple Calculator</h2>
+      <h2 className="project-title">E-Commerce Website</h2>
 
       {/* Description */}
       <p className="project-description">
-        A responsive calculator built using HTML, CSS, and JavaScript.It performs basic arithmetic operations like addition, subtraction, multiplication, and division with a clean and user-friendly interface.
-      </p>
+       A simple and elegant e-commerce platform designed with React and JSON-based product data. It includes features like product display, shopping cart updates, and a demo payment flow, wrapped in a clean and intuitive UI.
+         </p>
 
       
 
       {/* Links */}
       <div className="project-links">
-        <a href="https://github.com/yourrepo" target="_blank" rel="noopener noreferrer" className="btn btn-code">
+        <a href="https://github.com/moin43022/E-com" target="_blank" rel="noopener noreferrer" className="btn btn-code">
           Code
         </a>
-        <a href="https://yourdemo.com" target="_blank" rel="noopener noreferrer" className="btn btn-demo">
+        <a href="https://e-com-j9j9.vercel.app/" target="_blank" rel="noopener noreferrer" className="btn btn-demo">
           Demo
         </a>
       </div>
