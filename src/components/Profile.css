@@ -674,26 +674,26 @@ font-size: 1.5rem;
     margin-right: 25px;
   }
 
-  .nav-links {
-    position: absolute;
-    top: 40px;
-    left: 1;
-    right: -4%;
-    background: black;
-   
-    flex-direction: column;
-    align-items: center;
-    gap: 25px;
-    padding: 20px 0;
-    display: none;
-  }
+.nav-links {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  right: 0;
+  background: black;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  padding: 20px 0;
 
-  .nav-links.show {
-    display: flex;
-    overflow: hidden;
-    width: 100%;
-    padding-right: 20px;
-  }
+  /* important changes */
+  display: flex;
+  pointer-events: none;
+}
+
+.nav-links.show {
+  pointer-events: auto;
+}
+
 
   .logo{
     font-size: 1.2rem;

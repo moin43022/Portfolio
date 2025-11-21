@@ -11,6 +11,7 @@ import ecom from "./e-com.png"
 export default function PortfolioPage() {
   const [hover, setHover] = useState(false);
   const [active, setActive] = useState("home");
+  const isMobilee = window.innerWidth < 770;
 const handleSubmit = (e) => {
     e.preventDefault(); // stops page reload
     alert("Thank you for getting in touch! I will get back to you soon.");
@@ -107,7 +108,19 @@ const [menuOpen, setMenuOpen] = useState(false);
         <div></div>
       </div>
 
-      <ul className={`nav-links ${menuOpen ? "show" : ""}`}>
+      <motion.ul className={`nav-links ${menuOpen ? "show" : ""}`}
+      initial={isMobilee ? { x: "-100%", opacity: 0 } : {}}   // <-- no false
+  animate={
+    isMobilee
+      ? { x: menuOpen ? 0 : "-100%", opacity: menuOpen ? 1 : 0 }
+      : {}
+  }
+  transition={{
+    type: "spring",
+    stiffness: 70,  // smoother movement
+    damping: 22,    // smoother stop
+  }}
+      >
         <li
           className={active === "home" ? "active" : ""}
           onClick={() => {
@@ -144,7 +157,7 @@ const [menuOpen, setMenuOpen] = useState(false);
         >
           Contact
         </li>
-      </ul>
+      </motion.ul>
     </motion.nav>
 
     
@@ -498,10 +511,18 @@ I’ve always had a deep passion for creating things from the ground up, whether
           </div>
 
           <div className="socialmedia">
+             <a href="https://github.com/moin43022" target="_blank" rel="noopener noreferrer" style={{ color: "inherit", textDecoration: "none" }}>
             <i class="fa-brands fa-github"></i>
+            </a>
+             <a href="https://www.instagram.com/freakky.moin/" target="_blank" rel="noopener noreferrer" style={{ color: "inherit", textDecoration: "none" }}>
             <i class="fa-brands fa-instagram"></i>
+            </a>
+             <a href="https://www.linkedin.com/in/moin-khan-7b2b20310/" target="_blank" rel="noopener noreferrer" style={{ color: "inherit", textDecoration: "none" }}>
             <i class="fa-brands fa-linkedin"></i>
+            </a>
+             <a href="https://github.com/moin43022" target="_blank" rel="noopener noreferrer" style={{ color: "inherit", textDecoration: "none" }}>
             <i class="fa-brands fa-facebook"></i>
+            </a>
           </div>
         </footer>
     </div>
