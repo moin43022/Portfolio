@@ -7,6 +7,8 @@ import cal from "./calculator.jpeg"
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import SkillsSlider from "./SkillsSlider";
 import ecom from "./e-com.png"
+import qmanage from "./q-management.png"
+import { Link } from "react-router-dom";
 
 export default function PortfolioPage() {
   const [hover, setHover] = useState(false);
@@ -335,25 +337,24 @@ I’ve always had a deep passion for creating things from the ground up, whether
           >
       {/* Project Title */}
          <div className="project-img">
-    <img src={ecom} alt="calculator" />
+    <img src={qmanage} alt="calculator" />
       </div>
-      <h2 className="project-title">E-Commerce Website</h2>
+      <h2 className="project-title">Q-Management Website</h2>
 
       {/* Description */}
       <p className="project-description">
-       A simple and elegant e-commerce platform designed with React and JSON-based product data. It includes features like product display, shopping cart updates, and a demo payment flow, wrapped in a clean and intuitive UI.
-         </p>
-
+Q-Management is a MERN stack–based ticket booking and event management platform. Users can log in with their mobile number, book tickets, and download a digital event pass. The admin dashboard tracks revenue, tickets sold, remaining tickets, and event details, while allowing offers, updates, and co-admin management — all in a clean, secure interface.
+</p>
       
 
       {/* Links */}
       <div className="project-links">
-        <a href="https://github.com/moin43022/E-com" target="_blank" rel="noopener noreferrer" className="btn btn-code">
+        <Link to="/demo" className="btn btn-code">
           Code
-        </a>
-        <a href="https://e-com-j9j9.vercel.app/" target="_blank" rel="noopener noreferrer" className="btn btn-demo">
+        </Link>
+        <Link to="/demo" className="btn btn-demo">
           Demo
-        </a>
+        </Link>
       </div>
     </motion.div>
 
@@ -373,8 +374,8 @@ I’ve always had a deep passion for creating things from the ground up, whether
 
       {/* Description */}
       <p className="project-description">
-       A simple and elegant e-commerce platform designed with React and JSON-based product data. It includes features like product display, shopping cart updates, and a demo payment flow, wrapped in a clean and intuitive UI.
-         </p>
+An e-commerce platform built with React and JSON-based product data to provide a smooth online shopping experience. Users can browse products, view details, add items to the cart, and update quantities in real time. The admin side can manage product listings, prices, and stock, while tracking total sales and orders. It also includes a demo checkout flow.
+</p>
 
       
 
