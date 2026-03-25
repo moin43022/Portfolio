@@ -659,7 +659,14 @@ font-size: 1.5rem;
   animation-play-state: paused;
 }
 
+.resume{
+  display: none;
+}
+
 @media (min-width: 320px) and (max-width: 480px) {
+  .resume{
+    display: block;
+  }
   .portfolio-container{
     overflow: hidden;
   }
@@ -667,8 +674,11 @@ font-size: 1.5rem;
     width: 100%;
     padding: 10px;
    justify-content: space-between;
-  }
   
+  }
+  .navbar.open{
+  background-color: black;
+}
 
   .menu-icon {
     display: flex;
@@ -680,15 +690,17 @@ font-size: 1.5rem;
   top: 40px;
   left: 0;
   right: 0;
-  background: black;
   flex-direction: column;
   align-items: center;
-  gap: 25px;
-  padding: 20px 0;
-
-  /* important changes */
+  gap: 50px;
+  padding:40px 0px 20px 0;
   display: flex;
   pointer-events: none;
+background-color:black;
+height: 100vh;
+}
+.nav-links li{
+  font-size: 1.25rem;
 }
 
 .nav-links.show {
@@ -756,6 +768,7 @@ font-size: 1.5rem;
   .btn-secondary{
     padding: 7px 15px;
   }
+  
 
   .hero-image{
     width: 250px;

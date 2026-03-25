@@ -86,14 +86,14 @@ const skillsRow = [
   "HTML", "CSS", "JavaScript", "React", "C", "C++", "Java",
   "Python", "MongoDB", "NodeJS", "Express"
 ];
-  
+
 const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <div className="portfolio-container">
       {/* Navbar */}
       <motion.nav
-      className="navbar"
+      className={`navbar ${menuOpen ? "open" : ""}`}
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
@@ -151,6 +151,15 @@ const [menuOpen, setMenuOpen] = useState(false);
           Projects
         </li>
         <li
+          className="resume"
+onClick={() => {
+  setMenuOpen(false);
+  window.open("/resume.pdf", "_blank");
+}}
+        >
+          Resume
+        </li>
+        <li
           className={active === "contact" ? "active" : ""}
           onClick={() => {
             scrollTo("contact");
@@ -200,7 +209,7 @@ const [menuOpen, setMenuOpen] = useState(false);
       <button className="btn-primary" onClick={() => scrollTo("about")}>
         Get Projects
       </button>
-      <button className="btn-secondary">My resume</button>
+      <button className="btn-secondary"  onClick={() => window.open("/resume.pdf", "_blank")}>My resume</button>
     </div>
 
 
