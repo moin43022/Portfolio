@@ -424,11 +424,12 @@ border-radius: 100%;
 
 .project-box {
   background: transparent;
-  padding: 20px;
+  padding: 20px 20px 10px 20px;
   border-radius: 10px;
   border: solid 1px rgba(58, 36, 1, 0.952);
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
  transition: border 0.5s ease, box-shadow 0.5s ease;
+ min-height: 360px;
 }
 
 .project-img{
@@ -459,12 +460,14 @@ overflow: hidden;
 .project-description {
   font-size: 14px;
   color: #aaa;
-  margin-bottom: 12px;
-  line-height: 1.4;
-  height: 38%;
+  line-height: 1.5;
+  display: -webkit-box;
+  -webkit-line-clamp: 6;   /* show 4 lines only */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 .project-links {
-  margin-top: 20px;
+  margin-top: 25px;
   display: flex;
   gap: 10px;
 }
@@ -663,6 +666,7 @@ font-size: 1.5rem;
   display: none;
 }
 
+
 @media (min-width: 320px) and (max-width: 480px) {
   .resume{
     display: block;
@@ -858,10 +862,12 @@ margin-top: 10px;
   font-size: 1rem;
 }
 .projects-div{
-  grid-template-columns: repeat(1,1fr);
-  width: 92%;
+  grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));;
+  max-width: 100%;
   gap: 80px;
 }
+
+
 
 .Contact-div{
   width: 75%;

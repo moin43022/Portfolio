@@ -3,7 +3,8 @@ import { motion } from "framer-motion";
 import "./Profile.css";
 import Typewriter from "typewriter-effect";
 import dp from "./mydp.jpg"
-import cal from "./calculator.jpeg"
+import lost from "./lost.png"
+import black from "./black.png"
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import SkillsSlider from "./SkillsSlider";
 import ecom from "./e-com.png"
@@ -352,7 +353,7 @@ I’ve always had a deep passion for creating things from the ground up, whether
 
       {/* Description */}
       <p className="project-description">
-Q-Management is a MERN stack–based ticket booking and event management platform. Users can log in with their mobile number, book tickets, and download a digital event pass. The admin dashboard tracks revenue, tickets sold, remaining tickets, and event details, while allowing offers, updates, and co-admin management — all in a clean, secure interface.
+Q-Management is a MERN-based event ticket booking platform where users log in with their mobile number, book tickets, and download digital passes, while the admin dashboard manages events, sales, and offers.
 </p>
       
 
@@ -383,7 +384,7 @@ Q-Management is a MERN stack–based ticket booking and event management platfor
 
       {/* Description */}
       <p className="project-description">
-An e-commerce platform built with React and JSON-based product data to provide a smooth online shopping experience. Users can browse products, view details, add items to the cart, and update quantities in real time. The admin side can manage product listings, prices, and stock, while tracking total sales and orders. It also includes a demo checkout flow.
+A React e-commerce platform using JSON product data where users can browse products, add items to the cart, and update quantities, while the admin panel manages products, stock, and order tracking with a demo checkout flow.
 </p>
 
       
@@ -409,13 +410,14 @@ An e-commerce platform built with React and JSON-based product data to provide a
           >
       {/* Project Title */}
       <div className="project-img">
-    <img src={ecom} alt="calculator" />
+    <img src={lost} alt="calculator" />
       </div>
-      <h2 className="project-title">E-Commerce Website</h2>
+      <h2 className="project-title">Lost & Found Website</h2>
 
       {/* Description */}
       <p className="project-description">
-       A simple and elegant e-commerce platform designed with React and JSON-based product data. It includes features like product display, shopping cart updates, and a demo payment flow, wrapped in a clean and intuitive UI.
+      A React and Node.js based platform where users can report lost or found items and browse existing listings. It includes item details, location information, and an admin panel to manage reports and help connect owners with the finders.
+
          </p>
 
       
@@ -431,7 +433,34 @@ An e-commerce platform built with React and JSON-based product data to provide a
       </div>
     </motion.div>
    
+ <motion.div className="project-box"
+           initial={{ opacity: 0, x:-50, y:50 }}       
+      whileInView={{ opacity: 1, x:0 ,y:0}}  
+      transition={{ duration: 1, delay: 0.2 }}
+        viewport={{ once: true }}
+          >
+      {/* Project Title */}
+         <div className="project-img">
+    <img src={black} alt="calculator" />
+      </div>
+      <h2 className="project-title">Black Spot Website</h2>
 
+      {/* Description */}
+      <p className="project-description">
+A React-based road safety website where users can view accident-prone city locations and access road services like driving license, insurance, and transport portals. It also provides information about traffic rules, safety schemes, and traffic signals.
+</p>
+      
+
+      {/* Links */}
+      <div className="project-links">
+        <Link to="/demo" className="btn btn-code">
+          Code
+        </Link>
+        <Link to="/demo" className="btn btn-demo">
+          Demo
+        </Link>
+      </div>
+    </motion.div>
 
         </div>
 
