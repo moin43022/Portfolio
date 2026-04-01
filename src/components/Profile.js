@@ -12,7 +12,7 @@ import qmanage from "./q-management.png"
 import { Link } from "react-router-dom";
 
 export default function PortfolioPage() {
-  const [hover, setHover] = useState(false);
+ 
   const [active, setActive] = useState("home");
   const isMobilee = window.innerWidth < 770;
 const handleSubmit = (e) => {
